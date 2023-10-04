@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image.jpg" alt="About Image" class="about-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title active-link">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <div class="tab-titles">
+                        <p class="tab-lnks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-lnks" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-lnks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-link" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> Designing web</li>
+                            <li><span>Figma</span> web</li>
+                            <li><span>Spirality</span> abcweb</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-current</span> Design web</li>
+                            <li><span>2019</span> web</li>
+                            <li><span>2017</span> abc</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2004</span> Design</li>
+                            <li><span>2005</span> abc</li>
+                            <li><span>2008</span> abc</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="description">
+        <div class="container">
+            <h2 class="sub-title">My Description</h2>
+            <div class="service-list">
+                <div>
+                    <div class="service-image">
+                        <img src="service1.jpg" alt="Service 1">
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <!-- Add more service blocks as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="Work 1">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <!-- Add more work blocks as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Add more sections and content as needed -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    </script>
+</body>
+</html>
